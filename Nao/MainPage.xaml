@@ -57,15 +57,34 @@
                      <Image Source="mewing.png"
                             Grid.Row="2"
                             Grid.Column="0"/>
+
+                     <ProgressBar x:Name="barraagua"
+                            Progress="0.5"
+                            ProgressColor="Blue"
+                            Grid.Row="2"
+                            Grid.Column="0"/>
+
+                     <ProgressBar x:Name="barrafome"
+                            Progress="0.5"
+                            ProgressColor="Red"
+                            Grid.Row="2"
+                            Grid.Column="0"/>
+
+                     <ProgressBar x:Name="barramewing"
+                            Progress="0.5"
+                            ProgressColor="Grey"
+                            Grid.Row="2"
+                            Grid.Column="0"/>
        </Grid>
 
        </Frame>
 
         <Frame Grid.Column="2"
               Grid.Row="1"
-        Grid.RowSpan="2"
-        Margin="10,0"
-               BackgroundColor="#4f5c6b">
+              Grid.RowSpan="2"
+              Margin="10,0"
+              BackgroundColor="#4f5c6b"
+              Padding="2">
 
        <Grid>
               <Grid.RowDefinitions>
@@ -79,27 +98,39 @@
               <Grid.ColumnDefinitions>
                      <ColumnDefinition Width="*"/>
               </Grid.ColumnDefinitions>
-       </Grid>
+
 
                      <ImageButton Source="direita.png"
                             Grid.Row="0"
-                            Grid.Column="0"/>
+                            Grid.Column="0"
+                            BackgroundColor="#4f5c6b"
+                            HorizontalOptions="Start"/>
 
                      <ImageButton Source="esquerda.png"
                             Grid.Row="1"
-                            Grid.Column="0"/>
+                            Grid.Column="0"
+                            BackgroundColor="#4f5c6b"
+                            HorizontalOptions="Start"/>
 
                      <ImageButton Source="agua.png"
                             Grid.Row="2"
-                            Grid.Column="0"/>
+                            Grid.Column="0"
+                            BackgroundColor="#4f5c6b"
+                            HorizontalOptions="Center"/>
                             
                      <ImageButton Source="comida.png"
                             Grid.Row="3"
-                            Grid.Column="0"/>
+                            Grid.Column="0"
+                            BackgroundColor="#4f5c6b"
+                            HorizontalOptions="Center"/>
 
                      <ImageButton Source="mewing.png"
                             Grid.Row="4"
-                            Grid.Column="0"/>
+                            Grid.Column="0"
+                            BackgroundColor="#4f5c6b"
+                            HorizontalOptions="Center"/>
+
+                     </Grid>
 
        </Frame>
 
