@@ -60,21 +60,21 @@
 
                      <ProgressBar x:Name="barraagua"
                             Progress="0.5"
-                            ProgressColor="Blue"
-                            Grid.Row="2"
-                            Grid.Column="0"/>
+                            ProgressColor="#189dd6"
+                            Grid.Row="0"
+                            Grid.Column="1"/>
 
                      <ProgressBar x:Name="barrafome"
                             Progress="0.5"
-                            ProgressColor="Red"
-                            Grid.Row="2"
-                            Grid.Column="0"/>
+                            ProgressColor="#bf740b"
+                            Grid.Row="1"
+                            Grid.Column="1"/>
 
                      <ProgressBar x:Name="barramewing"
                             Progress="0.5"
                             ProgressColor="Grey"
                             Grid.Row="2"
-                            Grid.Column="0"/>
+                            Grid.Column="1"/>
        </Grid>
 
        </Frame>
