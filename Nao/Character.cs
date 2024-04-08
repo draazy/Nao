@@ -7,7 +7,9 @@ namespace Nao;
     double Sede;
     double Fome;
 
+    protected string NomePersonagem;
 
+  //........................................
 
   public Personagem()
   
@@ -25,7 +27,7 @@ namespace Nao;
 
 
 
-  //-------------------------------------------
+  //........................................
 
 
 
@@ -67,42 +69,45 @@ namespace Nao;
   {
         
     if (f < 0)
-        Mewing = 0;
+        Fome = 0;
 
     else if (f > 1)
-        Mewing = 1;
+        Fome = 1;
 
     else
-        Mewing = f;
+        Fome = f;
 
   }
 
 
-//-------------------------------------------
+ //........................................
 
 
+  public double GetMewing()
+  {
+      return Mewing;
 
+  }
 
+  public double GetSede()
+  { 
+      return Sede;
 
+  }
 
+  public double GetFome()
+  {
+      return Fome;
 
+  }
+  
 
+ //........................................
 
+public string GetNomePersonagem()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{
+    return NomePersonagem;
+}
 
 }
