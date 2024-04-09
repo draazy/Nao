@@ -24,9 +24,13 @@
               Aspect="AspectFill"/>
 
        <Image Source="nugget.png"
+              x:Name="FotoComida"
               Grid.RowSpan="2"
               Grid.Row="2"
               Grid.ColumnSpan="3"/>
+
+       <Label x:Name="LabelNome"/>
+                     
 
        <Frame Grid.Row="0"
               Grid.Column="0"
@@ -76,8 +80,9 @@
                             Grid.Row="2"
                             Grid.Column="1"/>
        </Grid>
-
        </Frame>
+
+
 
         <Frame Grid.Column="2"
               Grid.Row="1"
@@ -101,30 +106,35 @@
 
 
                      <ImageButton Source="direita.png"
+                            Clicked="BotaoProximo"
                             Grid.Row="0"
                             Grid.Column="0"
                             BackgroundColor="#4f5c6b"
                             HorizontalOptions="Start"/>
 
                      <ImageButton Source="esquerda.png"
+                            Clicked="BotaoAnterior"
                             Grid.Row="1"
                             Grid.Column="0"
                             BackgroundColor="#4f5c6b"
                             HorizontalOptions="Start"/>
 
                      <ImageButton Source="agua.png"
+                            Clicked="ClicoubotaoAgua"
                             Grid.Row="2"
                             Grid.Column="0"
                             BackgroundColor="#4f5c6b"
                             HorizontalOptions="Center"/>
                             
                      <ImageButton Source="comida.png"
+                            Clicked="ClicoubotaoComida"
                             Grid.Row="3"
                             Grid.Column="0"
                             BackgroundColor="#4f5c6b"
                             HorizontalOptions="Center"/>
 
                      <ImageButton Source="mewing.png"
+                            Clicked="ClicoubotaoMewing"
                             Grid.Row="4"
                             Grid.Column="0"
                             BackgroundColor="#4f5c6b"

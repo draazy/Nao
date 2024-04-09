@@ -9,6 +9,7 @@ namespace Nao;
 
     protected string NomePersonagem;
 
+ protected string FotoPersonagem;
   //........................................
 
   public Personagem()
@@ -103,6 +104,13 @@ namespace Nao;
   
 
  //........................................
+
+ public string GetArquivo()
+    {
+            return FotoPersonagem;
+    }
+
+//...................................
 
 public string GetNomePersonagem()
 
