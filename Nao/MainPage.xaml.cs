@@ -48,23 +48,23 @@ public partial class MainPage : ContentPage
 	Atual.SetSede(Atual.GetSede() - 0.01);
 		barraagua.Progress = Atual.GetSede();
 
-		Atual.SetFome(Atual.GetFome() - 0.0001);
+		Atual.SetFome(Atual.GetFome() - 0.01);
 		barrafome.Progress = Atual.GetFome();
 
-		Atual.SetMewing(Atual.GetMewing() - 0.0001);
+		Atual.SetMewing(Atual.GetMewing() - 0.01);
 		barramewing.Progress = Atual.GetMewing();
 
 		Nugget.SetSede(Nugget.GetSede() - 0.01);
-		Nugget.SetFome(Nugget.GetFome() - 0.0001);
-		Nugget.SetMewing(Nugget.GetMewing() - 0.0001);
+		Nugget.SetFome(Nugget.GetFome() - 0.001);
+		Nugget.SetMewing(Nugget.GetMewing() - 0.001);
 
 		Maca.SetSede(Maca.GetSede() - 0.01);
-		Maca.SetFome(Maca.GetFome() - 0.0001);
-		Maca.SetMewing(Maca.GetMewing() - 0.0001);
+		Maca.SetFome(Maca.GetFome() - 0.001);
+		Maca.SetMewing(Maca.GetMewing() - 0.001);
 
 		Pera.SetSede(Pera.GetSede() - 0.01);
-		Pera.SetFome(Pera.GetFome() - 0.0001);
-		Pera.SetMewing(Pera.GetMewing() - 0.0001);
+		Pera.SetFome(Pera.GetFome() - 0.001);
+		Pera.SetMewing(Pera.GetMewing() - 0.001);
 	
 	}
 
@@ -81,6 +81,10 @@ public partial class MainPage : ContentPage
 
 		FotoComida.Source = Atual.GetArquivo();
 		LabelNome.Text = Atual.GetNomePersonagem();
+
+		barraagua.Progress = Atual.GetSede();
+		barrafome.Progress = Atual.GetFome();
+		barramewing.Progress = Atual.GetMewing();
 	}
 
 //...............................................................
@@ -98,6 +102,10 @@ public partial class MainPage : ContentPage
 
 		FotoComida.Source = Atual.GetArquivo();
 		LabelNome.Text = Atual.GetNomePersonagem();
+
+		barraagua.Progress = Atual.GetSede();
+		barrafome.Progress = Atual.GetFome();
+		barramewing.Progress = Atual.GetMewing();
 	}
 
 //...................................................................
@@ -114,7 +122,7 @@ void AtualizarProgresso()
 
 //...................................................................
 
-	private void ClicouBotaoAgua(object sender, EventArgs args) 
+	private void ClicoubotaoAgua(object sender, EventArgs args) 
 	{
 		Atual.SetSede(Atual.GetSede() + 0.1);
 		barraagua.Progress = Atual.GetSede();
@@ -122,7 +130,7 @@ void AtualizarProgresso()
 
 //------------------------------------------------------------
 
-	private void ClicouBotaoComida(object sender, EventArgs args) 
+	private void ClicoubotaoComida(object sender, EventArgs args) 
 	{
 		Atual.SetFome(Atual.GetFome() + 0.1);
 		barrafome.Progress = Atual.GetFome();
@@ -130,7 +138,7 @@ void AtualizarProgresso()
 
 //------------------------------------------------------------
 
-	private void ClicouBotaoMewing(object sender, EventArgs args) 
+	private void ClicoubotaoMewing(object sender, EventArgs args) 
 	{
 		Atual.SetMewing(Atual.GetMewing() + 0.1);
 		barramewing.Progress = Atual.GetMewing();

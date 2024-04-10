@@ -29,7 +29,18 @@
               Grid.Row="2"
               Grid.ColumnSpan="3"/>
 
-       <Label x:Name="LabelNome"/>
+       <Label Text="Nigget"
+              HorizontalOptions="Center"
+              VerticalOptions="Center"
+              x:Name="LabelNome"
+              FontFamily="Banana"
+              FontSize="90"
+              TextColor="White"
+              Grid.Row="1"
+              Grid.Column="0"
+              Grid.RowSpan="2"
+              Grid.ColumnSpan="3"
+              />
                      
 
        <Frame Grid.Row="0"

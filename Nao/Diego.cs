@@ -8,7 +8,7 @@ public class Diego : Personagem
     public Diego()
     {
         NomePersonagem = "Diego";
-        FotoPersonagem = "nugget.png";
+        FotoPersonagem = "pera.png";
     }
 
 }
